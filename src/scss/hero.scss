@@ -1,0 +1,12 @@
+.background {
+  width: 300px;
+  height: 200px;
+  background-image: url('./images/background@1x.png');
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('./images/background@2x.png');
+  }
+  @include media(desktop) {
+    width: 400px;
+  }
+}
