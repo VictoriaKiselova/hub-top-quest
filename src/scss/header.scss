@@ -133,6 +133,11 @@
     font-weight: 700;
     color: $title-color;
   }
+
+  .nav-list:hover,
+  .nav-list:focus {
+    color: $hover-color-modal;
+  }
 }
 .modal-nav.open {
   display: block;
