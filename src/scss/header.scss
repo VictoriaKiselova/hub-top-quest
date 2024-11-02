@@ -16,10 +16,6 @@
   }
 }
 
-.header.blue-bg {
-  background-color: $background-color-main;
-}
-
 .header-content {
   display: flex;
   flex-direction: row;
@@ -35,6 +31,10 @@
     width: 1040px;
     background-color: transparent;
   }
+}
+
+.header-content-blue-bg {
+  background-color: $background-color-main;
 }
 
 .nav-link {
