@@ -2,27 +2,41 @@
   position: fixed;
   height: 34px;
   width: 287px;
-
   background-color: $background-color-header;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 2px;
-  margin-top: 48px;
-  margin-left: 16px;
+  top: 48px;
+  left: 16px;
   border-radius: 8px;
+  overflow: hidden;
+  z-index: 999;
 
   @include media(desktop) {
     position: relative;
-    justify-content: center;
     height: 82px;
     width: 1200px;
     background-color: $background-color-main;
-    padding: 0;
-    margin-top: 16px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header.blue-bg {
+  background-color: $background-color-main;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  gap: 108px;
+
+  @include media(desktop) {
     gap: 18px;
-    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 1040px;
   }
 }
 
@@ -69,6 +83,7 @@
   width: 34px;
   height: 34px;
   border-radius: 8px;
+  border: 0.5px solid $background-color-gallery;
 
   @include media(desktop) {
     width: 65px;
@@ -92,6 +107,7 @@
     display: none;
   }
 }
+
 .modal-nav {
   display: none;
   position: fixed;
@@ -100,10 +116,39 @@
   width: 268px;
   height: 520px;
   background-color: $background-color-gallery;
-  padding: 20px;
+  // padding: 20px;
   z-index: 1000;
   overflow-y: auto;
+
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 66px;
+    padding-left: 32px;
+  }
+
+  .nav-list {
+    @include font(16, 20.08);
+    font-weight: 700;
+    color: $title-color;
+  }
 }
 .modal-nav.open {
   display: block;
+  padding: 0;
+}
+.close-modal {
+  position: absolute;
+  top: 9px;
+  right: 25px;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  .icon-close {
+    width: 34px;
+    height: 34px;
+    fill: $title-color;
+  }
 }
