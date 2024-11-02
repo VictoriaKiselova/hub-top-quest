@@ -1,24 +1,109 @@
 .header {
-}
+  position: fixed;
+  height: 34px;
+  width: 287px;
 
-.nav-list {
-  @include media(tablet) {
-    justify-content: flex-start;
-  }
+  background-color: $background-color-header;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2px;
+  margin-top: 48px;
+  margin-left: 16px;
+  border-radius: 8px;
 
   @include media(desktop) {
-    justify-content: flex-end;
+    position: relative;
+    justify-content: center;
+    height: 82px;
+    width: 1200px;
+    background-color: $background-color-main;
+    padding: 0;
+    margin-top: 16px;
+    gap: 18px;
+    margin-left: 0;
   }
 }
 
 .nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
-  color:$background-color-header;
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    @include font(24, 30.12);
+    color: $title-color;
+    gap: 32px;
+  }
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: $background-color-header;
+.nav-list {
+  color: $title-color;
+}
+
+.nav-list:hover,
+.nav-list:focus {
+  color: $hover-color;
+}
+
+.nav-list:active {
+  color: $hover-color;
+  text-decoration: underline;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-burger_menu {
+  width: 30px;
+  height: 30px;
+}
+.logo-mob {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+
+  @include media(desktop) {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.logo-favicon {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  border: none;
+  background-color: $background-color-header;
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+.modal-nav {
+  display: none;
+  position: fixed;
+  top: 48px;
+  left: 52px;
+  width: 268px;
+  height: 520px;
+  background-color: $background-color-gallery;
+  padding: 20px;
+  z-index: 1000;
+  overflow-y: auto;
+}
+.modal-nav.open {
+  display: block;
 }
