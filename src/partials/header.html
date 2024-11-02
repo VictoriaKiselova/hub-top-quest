@@ -1,4 +1,48 @@
 <header class="header">
-  <nav class="nav">
-  </nav>
+  <div class="header-content">
+    <div class="logo-favicon">
+      <a href="#">
+        <img
+          src="/img/Logo/Logo.png"
+          alt="Hub Top Quest Logo"
+          class="logo-mob"
+        />
+      </a>
+    </div>
+
+    <nav>
+      <ul class="nav-link">
+        <li class="nav-list"><a href="#home">Home</a></li>
+        <li class="nav-list"><a href="#description">Game Description</a></li>
+        <li class="nav-list"><a href="#features">Unique Features</a></li>
+        <li class="nav-list"><a href="#how-to-play">How to Play</a></li>
+        <li class="nav-list"><a href="#faq">FAQ</a></li>
+        <li class="nav-list"><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <svg class="icon icon-burger_menu" aria-hidden="true">
+        <use href="/img/sprite.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+  </div>
 </header>
+
+<!-- Модальне вікно для навігації -->
+<div class="modal-nav" id="modal-nav">
+  <button class="close-modal" aria-label="Close menu">
+    <svg class="icon icon-close" aria-hidden="true">
+      <use href="/img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <nav>
+    <ul class="nav-link">
+      <li class="nav-list"><a href="#home">Home</a></li>
+      <li class="nav-list"><a href="#description">Game Description</a></li>
+      <li class="nav-list"><a href="#features">Unique Features</a></li>
+      <li class="nav-list"><a href="#how-to-play">How to Play</a></li>
+      <li class="nav-list"><a href="#faq">FAQ</a></li>
+      <li class="nav-list"><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+</div>
