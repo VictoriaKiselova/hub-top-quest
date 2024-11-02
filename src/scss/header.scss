@@ -1,11 +1,10 @@
 .header {
   position: sticky;
   top: 0;
-  padding: 24px 16px 24px 16px;
+  padding: 24px 16px;
   width: 320px;
   background-color: $background-color-main;
   border-radius: 8px;
-  overflow: hidden;
   z-index: 999;
 
   @include media(desktop) {
@@ -15,10 +14,6 @@
     align-items: center;
     justify-content: center;
   }
-}
-
-.header.blue-bg {
-  background-color: $background-color-main;
 }
 
 .header-content {
@@ -36,6 +31,10 @@
     width: 1040px;
     background-color: transparent;
   }
+}
+
+.header-content-blue-bg {
+  background-color: $background-color-main;
 }
 
 .nav-link {

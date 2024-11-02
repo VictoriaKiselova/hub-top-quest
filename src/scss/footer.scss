@@ -30,6 +30,9 @@
 }
 
 .rules {
+  display: flex;
+  flex-direction: column;
+
   @include media(desktop) {
     display: flex;
     flex-direction: column;
