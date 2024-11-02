@@ -1,0 +1,90 @@
+.homeContainer {
+  background-color: $background-color-main;
+  background-image: url('/img/home/home-baground-mob1x.png');
+  background-repeat: no-repeat;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('/img/home/home-baground-mob2x.png');
+  }
+  @include media(desktop) {
+    display: flex;
+    column-gap: 142px;
+    padding: 126px 95px 148px 130px;
+    background-image: url('/img/home/home-baground-desktop1x.png');
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('/img/home/home-baground-desktop2x.png');
+    }
+  }
+}
+.homePhoneWrapper {
+  padding: 1px 6px 0 160px;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+    padding: 0;
+    order: 2;
+  }
+}
+.phone {
+  width: 152px;
+  height: 282px;
+
+  @include media(desktop) {
+    width: 336px;
+    height: 620px;
+  }
+}
+.googleBox {
+  text-align: center;
+  @include media(desktop) {
+    order: 1;
+    width: 519px;
+    text-align: left;
+    padding-top: 255px;
+  }
+}
+.titleHome {
+  font-family: Potta One;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: $title-hero;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  @include media(desktop) {
+    font-size: 64px;
+    text-align: left;
+    margin-bottom: 32px;
+    text-shadow: 0px 0px 67px rgba(74, 29, 30, 1);
+  }
+}
+.google-button {
+  cursor: pointer;
+  display: inline-block;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.google-button:hover {
+  box-shadow: 0 0 8px 3px #caff00;
+}
+.img-google-button {
+  width: 180px;
+  height: 52px;
+  @include media(desktop) {
+    width: 270px;
+    height: 80px;
+  }
+}
+.waterPicture {
+  @include media(desktop) {
+    display: none;
+  }
+}
+.waterImg {
+  width: 270px;
+  height: 72px;
+  display: block;
+  margin-top: -13px;
+}
