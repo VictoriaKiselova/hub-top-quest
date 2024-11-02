@@ -2,6 +2,7 @@
   background-color: $background-color-main;
   background-image: url('/img/home/home-baground-mob1x.png');
   background-repeat: no-repeat;
+  margin-bottom: 10px;
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url('/img/home/home-baground-mob2x.png');
@@ -53,7 +54,7 @@
   color: $title-hero;
   margin-bottom: 16px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
-  
+
   @include media(desktop) {
     font-size: 64px;
     text-align: left;

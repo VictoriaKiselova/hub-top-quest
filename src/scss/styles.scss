@@ -17,11 +17,10 @@ body {
 
 .container {
   width: $mobile;
-  // padding: 0 16px;
+  position: relative;
   margin: 0 auto;
 
   @include media(desktop) {
     width: $desktop;
-    // padding: 0 80px;
   }
 }
