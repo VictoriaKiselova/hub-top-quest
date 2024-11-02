@@ -83,7 +83,7 @@
 
 .menu-toggle {
   border: none;
-  background-color: #0795aa;
+  background-color: $background-color-header;
   display: flex;
   align-items: center;
   padding: 0;
@@ -91,4 +91,19 @@
   @include media(desktop) {
     display: none;
   }
+}
+.modal-nav {
+  display: none;
+  position: fixed;
+  top: 48px;
+  left: 52px;
+  width: 268px;
+  height: 520px;
+  background-color: $background-color-gallery;
+  padding: 20px;
+  z-index: 1000;
+  overflow-y: auto;
+}
+.modal-nav.open {
+  display: block;
 }
