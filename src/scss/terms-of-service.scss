@@ -56,21 +56,42 @@
   font-family: Potta One;
   font-weight: 400;
   @include font(24, 34.75);
+
+  @include media(desktop) {
+    @include font(48, 69.5);
+  }
 }
 
 .text-terms {
   color: $title-color;
   font-weight: 400;
   @include font(14, 17.57);
+
+  @include media(desktop) {
+    @include font(16, 19.36);
+  }
+}
+
+.text-terms-sizes {
+  color: $title-color;
+  font-weight: 400;
+  @include font(14, 17.57);
+
+  @include media(desktop) {
+    @include font(20, 25.1);
+  }
 }
 
 .articles {
   font-weight: 800;
   @include font(14, 17.57);
+
+  @include media(desktop) {
+    @include font(16, 20.08);
+    font-weight: 700;
+  }
 }
-.container {
-  background-color: $background-color-policy;
-}
+
 .info-terms-email {
   font-weight: 800;
   @include font(14, 17.57);
@@ -86,6 +107,10 @@
 }
 .terms-container {
   padding: 32px 16px 8px 16px;
+
+  @include media(desktop) {
+    padding: 68px 82px 48px 78px;
+  }
 }
 
 .title-box {
@@ -101,6 +126,10 @@
   font-weight: 400;
   @include font(14, 17.57);
   padding-bottom: 24px;
+
+  @include media(desktop) {
+    @include font(16, 19.36);
+  }
 }
 
 .terms-list-item {
@@ -109,6 +138,40 @@
 
 .image-fixed {
   position: relative;
+  background-color: $background-color-policy;
+  overflow: hidden;
+}
+
+.navigate-home {
+  width: 103px;
+  padding-left: 16px;
+  padding-top: 48px;
+
+  @include media(desktop) {
+    width: 163px;
+    padding-left: 80px;
+    padding-top: 24px;
+  }
+}
+
+.icon-arrow {
+  width: 32px;
+  height: 32px;
+
+  @include media(desktop) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
 }
 
 .rotated-image {
@@ -117,18 +180,11 @@
   height: 200px;
   top: 10px;
   right: -16px;
-}
 
-.navigate-home {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 103px;
-  padding-left: 16px;
-  padding-top: 48px;
-}
-
-.icon-arrow {
-  width: 32px;
-  height: 32px;
+  @include media(desktop) {
+    width: 710px;
+    height: 300px;
+    top: -10px;
+    right: 0px;
+  }
 }
