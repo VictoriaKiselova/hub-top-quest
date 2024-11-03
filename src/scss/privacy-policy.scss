@@ -177,3 +177,14 @@
     right: 0px;
   }
 }
+
+.container-rules {
+  width: $mobile;
+  position: relative;
+  margin: 0 auto;
+  background-color: $background-color-policy;
+
+  @include media(desktop) {
+    width: $desktop;
+  }
+}
