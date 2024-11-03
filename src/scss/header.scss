@@ -60,10 +60,11 @@
   color: $hover-color;
 }
 
-.nav-list:active {
+.nav-list.active {
   color: $hover-color;
   text-decoration: underline;
 }
+
 .icon {
   display: inline-block;
   width: 1em;
@@ -141,8 +142,8 @@
 }
 .close-modal {
   position: absolute;
-  top: 9px;
-  right: 25px;
+  top: 5px;
+  right: 5px;
   border: none;
   background: none;
   cursor: pointer;

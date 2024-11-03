@@ -23,7 +23,27 @@ document.addEventListener('DOMContentLoaded', function () {
     closeModal.addEventListener('click', closeModalNav);
 
     navLinks.forEach(link => {
-      link.addEventListener('click', closeModalNav);
+      link.addEventListener('click', event => {
+        event.preventDefault();
+
+        navLinks.forEach(link => link.parentElement.classList.remove('active'));
+
+        link.parentElement.classList.add('active');
+
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          const sectionPosition =
+            targetSection.getBoundingClientRect().top + window.scrollY;
+
+          window.scrollTo({
+            top: sectionPosition,
+            behavior: 'smooth',
+          });
+        }
+
+        closeModalNav();
+      });
     });
 
     document.addEventListener('click', event => {
@@ -40,6 +60,10 @@ document.addEventListener('DOMContentLoaded', function () {
       if (window.innerWidth >= 1200) {
         closeModalNav();
       }
+    });
+
+    window.addEventListener('scroll', () => {
+      navLinks.forEach(link => link.parentElement.classList.remove('active'));
     });
   } else {
     console.warn(
