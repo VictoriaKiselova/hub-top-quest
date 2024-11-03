@@ -19,6 +19,7 @@ body {
   width: $mobile;
   position: relative;
   margin: 0 auto;
+  background-color: $background-color-main;
 
   @include media(desktop) {
     width: $desktop;
