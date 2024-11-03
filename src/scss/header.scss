@@ -153,3 +153,15 @@
     fill: $title-color;
   }
 }
+.modal-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 178px;
+}
+
+.policy-terms {
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  gap: 10px;
+}

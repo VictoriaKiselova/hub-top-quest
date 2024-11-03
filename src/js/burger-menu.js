@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalNav = document.querySelector('#modal-nav');
   const closeModal = document.querySelector('.close-modal');
   const headerContent = document.querySelector('.header-content');
+  const navLinks = document.querySelectorAll('.nav-link a');
 
   if (menuToggle && modalNav && closeModal && headerContent) {
     menuToggle.addEventListener('click', event => {
@@ -17,6 +18,13 @@ document.addEventListener('DOMContentLoaded', function () {
     closeModal.addEventListener('click', () => {
       modalNav.classList.remove('open');
       headerContent.classList.remove('header-content-blue-bg');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        modalNav.classList.remove('open');
+        headerContent.classList.remove('header-content-blue-bg');
+      });
     });
 
     document.addEventListener('click', event => {
