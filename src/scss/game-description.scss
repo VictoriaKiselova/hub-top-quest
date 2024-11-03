@@ -19,14 +19,12 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 1.45;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   text-align: center;
   color: $title-color;
   margin-bottom: 24px;
-
   @include media(desktop) {
     font-size: 48px;
-    letter-spacing: 0.03em;
     text-align: left;
     margin-bottom: 32px;
   }
@@ -36,7 +34,6 @@
   justify-content: center;
   gap: 16px;
   margin-bottom: 24px;
-
   @include media(desktop) {
     display: none;
   }
@@ -55,7 +52,6 @@
   text-align: justify;
   color: $text-color;
   margin-bottom: 4px;
-
   @include media(desktop) {
     font-size: 20px;
     line-height: 1.25;
@@ -80,7 +76,6 @@
   width: 225px;
   height: 45px;
   overflow: hidden;
-
   @include media(desktop) {
     display: none;
   }

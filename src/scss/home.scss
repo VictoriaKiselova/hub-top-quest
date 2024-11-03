@@ -2,15 +2,19 @@
   background-color: $background-color-main;
   background-image: url('/img/home/home-baground-mob1x.png');
   background-repeat: no-repeat;
+  background-size: 320px 324px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url('/img/home/home-baground-mob2x.png');
   }
   @include media(desktop) {
-    display: flex;
-    column-gap: 142px;
-    padding: 126px 95px 148px 130px;
+    flex-direction: row;
+    column-gap: 130px;
+    padding: 109px 116px 148px 121px;
+    background-size: 1200px 880px;
     background-image: url('/img/home/home-baground-desktop1x.png');
 
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -21,29 +25,53 @@
 .homePhoneWrapper {
   padding: 1px 6px 0 160px;
   margin-bottom: 40px;
-
   @include media(desktop) {
     margin-bottom: 0;
     padding: 0;
     order: 2;
+    position: relative;
   }
 }
+.phonePicture {
+  position: relative;
+  z-index: 2;
+}
+
 .phone {
   width: 152px;
   height: 282px;
-
   @include media(desktop) {
     width: 336px;
     height: 620px;
   }
 }
+.glowingSphere {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 23%;
+    left: 76%;
+    width: 700px;
+    height: 780px;
+    background: radial-gradient(
+      circle,
+      rgb(169, 246, 255) 0%,
+      rgba(169, 246, 255, 0) 40%
+    );
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    backdrop-filter: blur(0px);
+    box-shadow: 0 0 60px rgba(169, 246, 255, 0);
+  }
+}
+
 .googleBox {
   text-align: center;
   @include media(desktop) {
     order: 1;
-    width: 519px;
     text-align: left;
-    padding-top: 255px;
+    padding-top: 272px;
   }
 }
 .titleHome {
@@ -54,11 +82,10 @@
   color: $title-hero;
   margin-bottom: 16px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
-
   @include media(desktop) {
-    font-size: 64px;
+    font-size: 63px;
     text-align: left;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
     text-shadow: 0px 0px 67px rgba(74, 29, 30, 1);
   }
 }
