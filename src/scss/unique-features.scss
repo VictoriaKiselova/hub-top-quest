@@ -107,4 +107,8 @@
   padding-left: 207px;
   overflow: hidden;
   z-index: 1001;
+
+  @include media(desktop) {
+    display: none;
+  }
 }

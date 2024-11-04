@@ -1,0 +1,62 @@
+.how-to-play-container {
+  position: relative;
+  padding: 32px 16px;
+  background-color: $background-color-main;
+  @include media(desktop) {
+    padding: 56px 80px;
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+  }
+}
+
+.htp-title {
+  font-family: Potta One;
+  @include font(24, 34.75);
+  font-weight: 400;
+  text-align: center;
+  color: $title-color;
+  padding-bottom: 26px;
+
+  @include media(desktop) {
+    @include font(48, 69.5);
+    padding-bottom: 48px;
+    text-align: start;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  padding-bottom: 16px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.htp-item {
+  padding-bottom: 32px;
+}
+.htp-numbers {
+  width: 48px;
+  height: 48px;
+}
+
+.htp-text {
+  @include font(14, 17.57);
+  color: $title-color;
+}
+
+.htp-fruits {
+  width: 36px;
+  height: 36px;
+}
+
+.icons-fruits-list {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: flex-end;
+}
