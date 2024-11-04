@@ -1,0 +1,110 @@
+.features-сontainer {
+  position: relative;
+  padding: 0 16px;
+  background-color: $background-color-main;
+  @include media(desktop) {
+    padding: 56px 80px;
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+  }
+}
+
+.features-title {
+  font-family: Potta One;
+  @include font(24, 34.75);
+  font-weight: 400;
+  text-align: center;
+  color: $title-color;
+  padding-bottom: 26px;
+
+  @include media(desktop) {
+    @include font(48, 69.5);
+    padding-bottom: 48px;
+    text-align: start;
+  }
+}
+
+.icon-features-check {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  --color21: #0d98b5;
+
+  @include media(desktop) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.features-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    padding-left: 89px;
+    padding-right: 89px;
+    margin-bottom: 24px;
+  }
+}
+
+.features-item:last-child {
+  margin-bottom: 0;
+}
+
+.text-features {
+  @include font(14, 17.57);
+  text-align: justify;
+  color: $title-color;
+
+  @include media(desktop) {
+    @include font(24, 30.12);
+  }
+}
+
+.features-list {
+  padding-bottom: 32px;
+}
+
+.cloudRicht-feature-desk {
+  width: 606px;
+  height: 156px;
+}
+
+.cloud-richt-feature {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  padding-left: 678px;
+}
+
+.cloudLeft-feature-desk {
+  width: 277px;
+  height: 152px;
+}
+
+.cloud-left-feature {
+  position: absolute;
+  bottom: 0;
+  padding-right: 982px;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.cloudRight-feature-mob {
+  width: 110px;
+  height: 64px;
+}
+
+.cloud-right-mob {
+  position: absolute;
+  bottom: -24px;
+  padding-left: 207px;
+  overflow: hidden;
+  z-index: 1001;
+}
