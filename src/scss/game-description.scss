@@ -1,7 +1,6 @@
 .deskriptionContainer {
   padding: 0 16px 14px 16px;
   background-color: $background-color-main;
-  // margin-bottom: 10px;
   @include media(desktop) {
     padding: 60px 80px;
     display: flex;
@@ -21,7 +20,7 @@
   line-height: 1.45;
   letter-spacing: 0.03em;
   text-align: center;
-  color: $title-color;
+  color: $text-color;
   margin-bottom: 24px;
   @include media(desktop) {
     font-size: 48px;
