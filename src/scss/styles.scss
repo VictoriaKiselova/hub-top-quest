@@ -20,6 +20,7 @@ body {
   position: relative;
   margin: 0 auto;
   background-color: $background-color-main;
+  overflow: hidden;
   @include media(desktop) {
     width: $desktop;
   }
