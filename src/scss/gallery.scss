@@ -1,0 +1,111 @@
+.galleryContainer {
+  position: relative;
+  padding: 32px 16px;
+  background-color: $background-color-gallery;
+  @include media(desktop) {
+    padding: 56px 0;
+  }
+}
+.galleryCloudImg {
+  width: 91px;
+  height: 46px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include media(desktop) {
+    width: 415px;
+    height: 83px;
+    top: -26px;
+    left: 118px;
+  }
+}
+.galleryBrunchImg {
+  width: 272px;
+  height: 155px;
+  position: absolute;
+  top: -58px;
+  left: 54px;
+  z-index: 8 !important;
+  @include media(desktop) {
+    width: 645px;
+    height: 354px;
+    top: -144px;
+    left: 565px;
+    transform: rotate(-3deg);
+    z-index: unset;
+  }
+}
+.galleryTukanImg {
+  width: 53px;
+  height: 49px;
+  position: absolute;
+  top: -38px;
+  left: 177px;
+  z-index: 11;
+  @include media(desktop) {
+    width: 111px;
+    height: 103px;
+    top: -68px;
+    left: 803px;
+  }
+}
+.galleryTitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.21;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: $text-color;
+  margin-bottom: 32px;
+  @include media(desktop) {
+    font-family: Potta One;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 79px;
+    margin-left: 80px;
+  }
+}
+.galleryList {
+  display: flex;
+  background-color: transparent;
+  list-style-type: none;
+}
+.galleryImg {
+  width: 288px;
+  height: 377px;
+  border-radius: 21px;
+  object-fit: cover;
+  @include media(desktop) {
+    width: 284px;
+    height: 372px;
+    border-radius: 24px;
+  }
+}
+.swiper-pagination-bullet-active {
+  background: $swiper-theme-color !important;
+}
+.swiper-pagination {
+  position: relative !important;
+  bottom: 0px !important;
+}
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+}
+.swiper-slide {
+  width: 288px !important;
+  height: 377px !important;
+  border-radius: 21px !important;
+  margin-bottom: 16px !important;
+  @include media(desktop) {
+    width: 284px !important;
+    height: 372px !important;
+    border-radius: 24px !important;
+    margin-bottom: 0;
+  }
+}
+.swiper-slide img {
+  transition: transform 0.5s ease, z-index 0s;
+}
