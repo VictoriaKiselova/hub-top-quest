@@ -5,7 +5,7 @@
   width: 320px;
   background-color: $background-color-main;
   overflow: hidden;
-  z-index: 99999;
+  z-index: 999;
 
   @include media(desktop) {
     width: 1200px;
