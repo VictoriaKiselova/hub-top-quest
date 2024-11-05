@@ -5,6 +5,7 @@
   background-size: 320px 324px;
   display: flex;
   flex-direction: column;
+  margin-top: 63px;
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url('/img/home/home-baground-mob2x.png');
@@ -13,6 +14,7 @@
     flex-direction: row;
     column-gap: 130px;
     padding: 109px 116px 148px 121px;
+    margin-top: 94px;
     background-size: 1200px 880px;
     background-image: url('/img/home/home-baground-desktop1x.png');
 
