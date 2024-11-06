@@ -2,6 +2,7 @@
   position: relative;
   padding: 32px 16px;
   background-color: $background-color-gallery;
+  margin-top: -1px;
   @include media(desktop) {
     padding: 56px 0;
   }
