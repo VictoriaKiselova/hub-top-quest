@@ -22,6 +22,7 @@
   justify-content: space-between;
   background-color: $background-color-header;
   border-radius: 8px;
+  position: relative;
 
   @include media(desktop) {
     gap: 18px;
@@ -105,9 +106,10 @@
 
 .modal-nav {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 24px;
-  right: 0;
+  left: 52.5%;
+  transform: translateX(-50%);
   width: 268px;
   height: 520px;
   background-color: $background-color-gallery;

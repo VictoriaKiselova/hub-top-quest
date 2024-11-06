@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   left: 0;
-
+  display: block;
   @include media(desktop) {
     width: 415px;
     height: 83px;
@@ -21,25 +21,27 @@
   }
 }
 .galleryBrunchImg {
+  display: inline-block;
+  position: absolute;
   width: 272px;
   height: 155px;
-  position: absolute;
   top: -58px;
   left: 54px;
   z-index: 8 !important;
   @include media(desktop) {
     width: 645px;
     height: 354px;
-    top: -144px;
+    top: -140px;
     left: 565px;
     transform: rotate(-3deg);
     z-index: unset;
   }
 }
 .galleryTukanImg {
+  display: block;
+  position: absolute;
   width: 53px;
   height: 49px;
-  position: absolute;
   top: -38px;
   left: 177px;
   z-index: 11;

@@ -183,7 +183,6 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px;
 
   @include media(desktop) {
     @include font(24, 30.12);
