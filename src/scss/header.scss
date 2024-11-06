@@ -1,5 +1,5 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   padding: 24px 16px 5px 16px;
   width: 320px;
@@ -128,8 +128,7 @@
     color: $title-color;
   }
 
-  .nav-list:hover,
-  .nav-list:focus {
+  .nav-list:hover {
     color: $hover-color-modal;
   }
 }
@@ -162,4 +161,8 @@
   flex-direction: column;
   padding-left: 32px;
   gap: 10px;
+}
+.nav-link a.active {
+  text-decoration: underline;
+  color: $active-nav-color;
 }
