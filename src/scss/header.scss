@@ -108,8 +108,7 @@
   display: none;
   position: fixed;
   top: 24px;
-  left: 52.5%;
-  transform: translateX(-50%);
+  right: calc((100vw - 320px) / 2);
   width: 268px;
   height: 520px;
   background-color: $background-color-gallery;
