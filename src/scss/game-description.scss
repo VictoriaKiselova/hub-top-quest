@@ -75,6 +75,7 @@
   width: 225px;
   height: 45px;
   overflow: hidden;
+  margin-left: -16px;
   @include media(desktop) {
     display: none;
   }
