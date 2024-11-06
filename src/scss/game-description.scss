@@ -18,9 +18,8 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 1.45;
-  letter-spacing: 0.03em;
   text-align: center;
-  color: $text-color;
+  color: $title-color;
   margin-bottom: 24px;
   @include media(desktop) {
     font-size: 48px;
