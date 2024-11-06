@@ -6,14 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
     let scrollPosition =
       document.documentElement.scrollTop || document.body.scrollTop;
 
+    const windowHeight = window.innerHeight;
+
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-      const border = 120;
 
       if (
-        scrollPosition >= sectionTop - border &&
-        scrollPosition < sectionTop + sectionHeight - border
+        scrollPosition >= sectionTop - windowHeight / 3 &&
+        scrollPosition < sectionTop + sectionHeight - windowHeight / 3
       ) {
         const id = section.getAttribute('id');
         navLinks.forEach(link => {
@@ -26,6 +27,18 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-
   window.addEventListener('scroll', changeActiveLink);
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+
+      window.scrollTo({
+        top: targetSection.offsetTop - window.innerHeight / 4,
+        behavior: 'smooth',
+      });
+    });
+  });
 });
