@@ -169,3 +169,8 @@
   text-decoration: underline;
   color: $active-nav-color;
 }
+
+.modal-menu .nav-link a.active {
+  text-decoration: underline;
+  color: $hover-color-modal;
+}
