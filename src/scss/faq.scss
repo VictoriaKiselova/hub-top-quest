@@ -11,6 +11,7 @@
   position: absolute;
   top: -35px;
   right: -2px;
+  z-index: 900;
   @include media(desktop) {
     top: -138px;
   }
