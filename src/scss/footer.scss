@@ -29,6 +29,11 @@
   }
 }
 
+.rule:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
 .rules {
   display: flex;
   flex-direction: column;
