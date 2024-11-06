@@ -20,7 +20,7 @@ function animateBubbles(entries) {
 }
 
 const observer = new IntersectionObserver(animateBubbles, {
-  threshold: 0.5,
+  threshold: 0.1,
 });
 
 const howToPlaySection = document.querySelector('.how-to-play-container');
