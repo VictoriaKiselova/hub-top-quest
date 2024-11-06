@@ -4,6 +4,7 @@
   background-color: $background-color-main;
   @include media(desktop) {
     padding: 56px 80px;
+
     display: flex;
     justify-content: center;
     column-gap: 24px;
@@ -71,6 +72,12 @@
   padding-bottom: 32px;
 }
 
+.features-list:last-child {
+  @include media(desktop) {
+    padding-bottom: 0;
+  }
+}
+
 .cloudRicht-feature-desk {
   width: 606px;
   height: 156px;
@@ -80,7 +87,7 @@
   position: absolute;
   top: 0;
   overflow: hidden;
-  padding-left: 678px;
+  left: 678px;
 }
 
 .cloudLeft-feature-desk {
@@ -90,10 +97,10 @@
 
 .cloud-left-feature {
   position: absolute;
-  bottom: 0;
-  padding-right: 982px;
+  top: 488px;
+  right: 982px;
   overflow: hidden;
-  z-index: 1001;
+  z-index: 900;
 }
 
 .cloudRight-feature-mob {
@@ -104,7 +111,11 @@
 .cloud-right-mob {
   position: absolute;
   bottom: -24px;
-  padding-left: 207px;
+  left: 207px;
   overflow: hidden;
-  z-index: 1001;
+  z-index: 900;
+
+  @include media(desktop) {
+    display: none;
+  }
 }
