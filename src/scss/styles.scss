@@ -9,18 +9,21 @@
 @import './privacy-policy.scss';
 @import './terms-of-service.scss';
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   color: $text-color;
   background-color: $background-color-main;
 }
-
 .container {
   width: $mobile;
   position: relative;
   margin: 0 auto;
-  background-color: $background-color-main;
-  overflow: hidden;
   @include media(desktop) {
     width: $desktop;
   }

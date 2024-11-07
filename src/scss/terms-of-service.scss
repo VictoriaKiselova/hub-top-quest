@@ -3,13 +3,14 @@
   font-family: 'Mulish', sans-serif;
   color: $text-color;
 }
+
 .footer-terms {
   width: 100%;
   background-image: url('/img/footer/footer1x.png');
   background-size: cover;
   background-position: center;
   color: $title-color;
-  padding: 24px 16px 7px 16px;
+  padding: 24px 0 7px 0;
   display: flex;
   flex-direction: column;
 
@@ -18,10 +19,15 @@
     background-image: url('/img/footer/footer2x.png');
     background-position: top;
     background-size: cover;
-    padding: 32px 80px 24px;
+    padding: 32px 24px;
   }
 }
-
+.footewrWrapper {
+  padding: 0 16px;
+  @include media(desktop) {
+    padding: 0 80px;
+  }
+}
 .rule {
   @include font(14, 17.57);
   font-weight: 400;

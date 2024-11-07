@@ -1,15 +1,21 @@
-.homeContainer {
+.homeSection {
+  margin-top: 63px;
   background-color: $background-color-main;
-  background-image: url('/img/home/home-baground-mob1x.png');
+  background-image: url('/img/home/set2@375.png');
   background-repeat: no-repeat;
-  background-size: 320px 324px;
+  background-size: auto 324px;
+  background-position: center top;
+  background-attachment: scroll;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('/img/home/set2@375.png');
+  }
+  @include media(desktop) {
+    background-image: none;
+  }
+}
+.homeContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 63px;
-
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url('/img/home/home-baground-mob2x.png');
-  }
   @include media(desktop) {
     flex-direction: row;
     column-gap: 130px;

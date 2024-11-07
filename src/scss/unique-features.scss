@@ -1,13 +1,18 @@
 .features-сontainer {
   position: relative;
-  padding: 0 16px;
+  padding: 0;
   background-color: $background-color-main;
   @include media(desktop) {
-    padding: 56px 80px;
-
+    padding: 56px 0;
     display: flex;
     justify-content: center;
     column-gap: 24px;
+  }
+}
+.features-wrapper {
+  padding: 0 16px;
+  @include media(desktop) {
+    padding: 0 80px;
   }
 }
 
@@ -79,8 +84,12 @@
 }
 
 .cloudRicht-feature-desk {
-  width: 606px;
-  height: 156px;
+  display: none;
+  @include media(desktop) {
+    display: block;
+    width: 606px;
+    height: 156px;
+  }
 }
 
 .cloud-richt-feature {
@@ -88,6 +97,9 @@
   top: 0;
   overflow: hidden;
   left: 678px;
+  @include media(desktop) {
+    top: -56px;
+  }
 }
 
 .cloudLeft-feature-desk {
@@ -97,10 +109,13 @@
 
 .cloud-left-feature {
   position: absolute;
-  top: 488px;
-  right: 982px;
-  overflow: hidden;
+  top: 435px;
+  right: 980px;
   z-index: 900;
+  @include media(desktop) {
+    width: 277px;
+    height: 152px;
+  }
 }
 
 .cloudRight-feature-mob {

@@ -1,11 +1,18 @@
 .how-to-play-container {
+  min-width: 320px;
   position: relative;
   z-index: 1;
-  padding: 32px 16px;
-  overflow: hidden;
+  padding: 32px 0;
 
   @include media(desktop) {
-    padding: 56px 80px;
+    padding: 56px 0;
+    height: 1436px;
+  }
+}
+.htp-wrapper {
+  padding: 0 16px;
+  @include media(desktop) {
+    padding: 0 80px;
     height: 1380px;
   }
 }
@@ -127,75 +134,75 @@
 .bulb1 {
   position: absolute;
   left: 50px;
-  top: 152px;
+  top: 120px;
 }
 
 .bulb2 {
   position: absolute;
   left: 74px;
-  top: 309px;
+  top: 277px;
 }
 
 .bulb3 {
   position: absolute;
   left: 258px;
-  top: 327px;
+  top: 295px;
 }
 
 .bulb10 {
   position: absolute;
   left: 57px;
-  top: 353px;
+  top: 321px;
 }
 
 .bulb4 {
   position: absolute;
   left: 56px;
-  top: 468px;
+  top: 436px;
 }
 
 .bulb5 {
   position: absolute;
   left: 155px;
-  top: 499px;
+  top: 467px;
 }
 
 .bulb11 {
   position: absolute;
   right: 275px;
-  top: 453px;
+  top: 421px;
   transform: rotate(140deg);
 }
 
 .bulb6 {
   position: absolute;
   left: 218px;
-  top: 584px;
+  top: 552px;
 }
 
 .bulb7 {
   position: absolute;
   left: 277px;
-  top: 733px;
+  top: 701px;
 }
 
 .bulb8 {
   position: absolute;
   left: 74px;
-  top: 773px;
+  top: 741px;
   transform: rotate(220deg);
 }
 
 .bulb9 {
   position: absolute;
   left: 169px;
-  top: 866px;
+  top: 834px;
 }
 
 .bulb12 {
   position: absolute;
   left: 208px;
-  top: 724px;
+  top: 692px;
 }
 
 .desk-bulbs-arrows {

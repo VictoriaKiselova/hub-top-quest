@@ -1,19 +1,27 @@
 .faqContainer {
-  padding: 32px 16px;
+  min-width: 320px;
+  padding: 32px 0;
   position: relative;
   background: linear-gradient(180deg, #0bbbd5 0%, #9fc804 100%);
+  background-size: 100% 100%;
+  background-position: center;
   @include media(desktop) {
-    padding: 56px 80px;
+    padding: 56px 0;
   }
 }
-
+.faqWrapper {
+  padding: 0 16px;
+  @include media(desktop) {
+    padding: 0 80px;
+  }
+}
 .faqBoxPicture {
   position: absolute;
-  top: -35px;
+  top: -67px;
   right: -2px;
   z-index: 900;
   @include media(desktop) {
-    top: -138px;
+    top: -194px;
   }
 }
 .faqBox {

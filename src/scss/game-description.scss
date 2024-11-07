@@ -1,8 +1,14 @@
 .deskriptionContainer {
-  padding: 0 16px 14px 16px;
+  padding: 0 0 14px 0;
   background-color: $background-color-main;
   @include media(desktop) {
-    padding: 60px 80px;
+    padding: 60px 0;
+  }
+}
+.deskrBox {
+  padding: 0 16px;
+  @include media(desktop) {
+    padding: 0 80px;
     display: flex;
     justify-content: center;
     column-gap: 24px;

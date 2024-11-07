@@ -1,11 +1,12 @@
 .footer {
   width: 100%;
   background-image: url('/img/footer/footer1x.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
+  background-repeat: no-repeat;
   opacity: 80%;
   color: $title-color;
-  padding: 24px 16px 7px 16px;
+  padding: 24px 0 7px 0;
   display: flex;
   flex-direction: column;
 
@@ -14,10 +15,15 @@
     background-image: url('/img/footer/footer2x.png');
     background-position: top;
     background-size: cover;
-    padding: 32px 80px 24px;
+    padding: 32px 0 24px 0;
   }
 }
-
+.footer-content {
+  padding: 0 16px 0 61px;
+  @include media(desktop) {
+    padding: 0 80px 0 455px;
+  }
+}
 .rule {
   @include font(14, 17.57);
   font-weight: 400;
